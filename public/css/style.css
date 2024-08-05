@@ -1,0 +1,126 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.navbar-brand {
+    color: #fa424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.f-info {
+    background-color: #ebebeb;
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-social i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-links,
+.f-info-social,
+.f-info-brand {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cards */
+.card {
+    border: none;
+    margin-bottom: 2rem;
+
+
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.card-text p{
+    padding: 0;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* new page */
+
+.btn{
+    border: none;
+    background-color: #fa424d;
+}
+
+.row label{
+    margin-bottom: 0;
+}
+
+/* edit */
+
+.image{
+    
+    height: 30vh;
+   
+    
+}
+
+.tit{
+    padding: 0 !important;
+}
+
+.listing{
+    margin-top: 1rem;
+}
+.btns{
+    display: flex;
+    padding-top: 2rem;
+}
+
+d-btn{
+    background-color: #222222 !important;
+}
