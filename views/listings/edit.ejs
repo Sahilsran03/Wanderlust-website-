@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate.ejs")-%>
+
+<body>
+    
+
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+<h3>Edt YourListing</h3>
+<form method="post" action="/listings/<%=allData._id%>?_method=PUT" novalidate class="needs-validation" >
+    
+    <div class="mb-3 ">
+        <label for="title" class="form-label">Title</label>
+        <input type="text"  required id="title" class="form-control"value="<%=allData.title%>" name="listing[title]">
+        <div class="invalid-feedback">Plese enter Tital</div>
+    </div>
+
+    <div class="mb-3 ">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" required class="form-control" id="description" placeholder="Enter description"><%=allData.description%></textarea>
+        <div class="invalid-feedback">Plese enter Description</div>
+    </div>
+
+    
+
+    <div class="mb-3 ">
+        <label for="image" class="form-label">Image URL</label>
+        <input type="text" id="image"  required class="form-control"value="<%=allData.image%>" name="listing[image]">  
+        <div class="invalid-feedback">Plese enter Image URL</div>
+     </div>
+
+     <div class="row">
+        <div class="mb-3 col-md-4 ">
+            <label for="price" class="form-label">Price</label>
+            <input type="number"  id="price" required  class="form-control" value="<%=allData.price%>"  name="listing[price]">
+            <div class="invalid-feedback">Plese enter Price</div>
+        </div>
+
+        <div class="mb-3 col-md-8 ">
+            <label for="country" class="form-label">Country</label>
+            <input type="text"  id="country" required class="form-control" value="<%=allData.country%>" name="listing[country]">
+            <div class="invalid-feedback">Plese enter Country</div>
+        </div>
+     </div>
+     
+
+    <div class="mb-3 ">
+        <label for="location" class="form-label">Location</label>
+        <input type="text"  id="location"required class="form-control" value="<%=allData.location%>" name="listing[location]">
+        <div class="invalid-feedback">Plese enter Description</div>
+    </div>
+
+   
+   
+    <button class="btn btn-dark">Edit</button>
+</form>
+</div>
+</div>
+<script src="/public/js/scprit.js"></script>
+</body>

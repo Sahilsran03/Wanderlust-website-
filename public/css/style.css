@@ -60,7 +60,7 @@ body{
 }
 
 /* cards */
-.card {
+.listing-card {
     border: none;
     margin-bottom: 2rem;
 
@@ -91,10 +91,11 @@ body{
 
 /* new page */
 
-.btn{
+.btne{
     border: none;
     background-color: #fa424d;
 }
+
 
 .row label{
     margin-bottom: 0;
