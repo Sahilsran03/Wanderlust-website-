@@ -35,7 +35,7 @@ async function main() {
 }
 
 const sessionOption = {
-  secret: "mysecretstring",
+  secret: process.env.SECRET ,
   resave: false,
   saveUninitialized: true,
   cookie: {
